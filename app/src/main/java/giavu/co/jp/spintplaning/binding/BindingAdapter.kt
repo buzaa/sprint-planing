@@ -1,6 +1,5 @@
 package giavu.co.jp.spintplaning.binding
 
-import android.util.Log
 import android.view.View
 import androidx.databinding.BindingAdapter
 
