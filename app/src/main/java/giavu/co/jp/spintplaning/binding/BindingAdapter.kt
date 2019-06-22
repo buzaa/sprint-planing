@@ -10,6 +10,5 @@ import androidx.databinding.BindingAdapter
  */
 @BindingAdapter("android:onClick")
 fun setClick(view: View, listener: View.OnClickListener) {
-    Log.d("BindingAdater", "Test")
     view.setOnProtectBarrageClickListener(listener)
 }
