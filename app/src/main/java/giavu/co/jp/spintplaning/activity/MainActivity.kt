@@ -1,11 +1,13 @@
-package giavu.co.jp.spintplaning
+package giavu.co.jp.spintplaning.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import giavu.co.jp.spintplaning.R
 import giavu.co.jp.spintplaning.databinding.ActivityMainBinding
+import giavu.co.jp.spintplaning.show_card.ShowNumberActivity
 
 class MainActivity : AppCompatActivity() {
 

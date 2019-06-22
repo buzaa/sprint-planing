@@ -1,4 +1,4 @@
-package giavu.co.jp.spintplaning
+package giavu.co.jp.spintplaning.activity
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

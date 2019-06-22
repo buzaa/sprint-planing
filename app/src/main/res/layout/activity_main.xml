@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
-        <variable name="viewModel" type="giavu.co.jp.spintplaning.MainViewModel"/>
+        <variable name="viewModel" type="giavu.co.jp.spintplaning.activity.MainViewModel"/>
     </data>
     <ScrollView
             android:layout_width="match_parent"
@@ -13,7 +13,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                tools:context="MainActivity">
+                tools:context=".activity.MainActivity">
             <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
