@@ -13,21 +13,21 @@
         <Button
                 android:id="@+id/ready"
                 android:background="@drawable/button_number_background_status"
-                android:visibility="@{viewModel.readyVisibility}"
+                android:visibility="@{safeUnbox(viewModel.readyVisibility)}"
                 android:text="READY!"
                 android:textColor="@color/colorAccent"
                 android:textSize="50sp"
                 android:layout_centerInParent="true"
-                app:onClick="@{() -> viewModel.readyClick()}"
+                android:onClick="@{() -> viewModel.readyClick()}"
                 android:layout_width="300dp"
                 android:layout_height="400dp"/>
         <Button
                 android:id="@+id/show"
-                android:visibility="@{viewModel.pointVisibility}"
+                android:visibility="@{safeUnbox(viewModel.pointVisibility)}"
                 android:background="@drawable/button_number_background_status"
                 android:textSize="150sp"
                 android:text="@{viewModel.point}"
-                app:onClick="@{() -> viewModel.pointClick()}"
+                android:onClick="@{() -> viewModel.pointClick()}"
                 android:layout_centerInParent="true"
                 android:layout_width="300dp"
                 android:layout_height="400dp"/>
