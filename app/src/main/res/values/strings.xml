@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SpintPlaning</string>
+    <string name="app_name">ScrumPlanning</string>
+    <string name="option">"?"</string>
 </resources>

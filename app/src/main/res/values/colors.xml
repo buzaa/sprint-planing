@@ -7,6 +7,7 @@
     <color name="jtx_blue_light">#304470</color>
     <color name="black">#1D1D1D</color>
     <color name="white">#FFFFFF</color>
+    <color name="grey">#DAD6D6</color>
     <!-- accent colors -->
     <color name="jtx_pink">#D20B52</color>
     <color name="jtx_pink_light">#DB3B74</color>

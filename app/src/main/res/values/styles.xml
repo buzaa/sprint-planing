@@ -3,9 +3,20 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/jtx_blue</item>
+        <item name="colorPrimaryDark">@color/jtx_blue</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Button_Board">
+        <item name="android:background">@drawable/button_number_background_status</item>
+        <item name="android:textSize">@dimen/size_40</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
