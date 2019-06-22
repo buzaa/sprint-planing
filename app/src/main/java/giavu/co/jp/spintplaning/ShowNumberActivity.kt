@@ -9,7 +9,7 @@ class ShowNumberActivity : AppCompatActivity() {
 
     companion object {
 
-        const val KEY_NUMBER = "key_number"
+        private const val KEY_NUMBER = "key_number"
 
         fun createIntent(context: Context, number: String): Intent {
             return Intent(context, ShowNumberActivity::class.java).apply {
