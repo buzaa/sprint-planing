@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SpintPlaning</string>
+    <string name="app_name">Planning Poker</string>
+    <string name="option">"?"</string>
 </resources>
