@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="viewModel" type="giavu.co.jp.spintplaning.show_card.ShowNumberViewModel"/>
     </data>
@@ -17,7 +18,7 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="50sp"
                 android:layout_centerInParent="true"
-                android:onClick="@{() -> viewModel.readyClick()}"
+                app:onClick="@{() -> viewModel.readyClick()}"
                 android:layout_width="300dp"
                 android:layout_height="400dp"/>
         <Button
@@ -26,7 +27,7 @@
                 android:background="@drawable/button_number_background_status"
                 android:textSize="150sp"
                 android:text="@{viewModel.point}"
-                android:onClick="@{() -> viewModel.pointClick()}"
+                app:onClick="@{() -> viewModel.pointClick()}"
                 android:layout_centerInParent="true"
                 android:layout_width="300dp"
                 android:layout_height="400dp"/>

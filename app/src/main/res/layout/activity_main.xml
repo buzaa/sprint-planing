@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="viewModel" type="giavu.co.jp.spintplaning.activity.MainViewModel"/>
     </data>
@@ -22,7 +23,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_marginTop="30dp"
                         android:text="1/2"
-                        android:onClick="@{() -> viewModel.floatClick()}"
+                        app:onClick="@{() -> viewModel.floatClick()}"
                         android:layout_marginStart="@dimen/margin_start"
                         android:layout_width="@dimen/width"
                         android:layout_height="@dimen/height"
@@ -34,7 +35,7 @@
                         android:layout_marginTop="30dp"
                         android:text="1"
                         android:layout_marginEnd="@dimen/margin_end"
-                        android:onClick="@{() -> viewModel.numberClick(1)}"
+                        app:onClick="@{() -> viewModel.numberClick(1)}"
                         android:layout_width="@dimen/width"
                         android:layout_height="@dimen/height"
                         style="@style/Button_Board"/>
@@ -48,7 +49,7 @@
                         android:id="@+id/num3"
                         android:layout_alignParentStart="true"
                         android:text="2"
-                        android:onClick="@{() -> viewModel.numberClick(2)}"
+                        app:onClick="@{() -> viewModel.numberClick(2)}"
                         android:layout_marginTop="30dp"
                         android:layout_marginStart="@dimen/margin_start"
                         android:layout_width="@dimen/width"
@@ -59,7 +60,7 @@
                         android:id="@+id/num4"
                         android:layout_alignParentEnd="true"
                         android:text="3"
-                        android:onClick="@{() -> viewModel.numberClick(3)}"
+                        app:onClick="@{() -> viewModel.numberClick(3)}"
                         android:layout_marginTop="30dp"
                         android:layout_marginEnd="@dimen/margin_end"
                         android:layout_width="@dimen/width"
@@ -75,7 +76,7 @@
                         android:id="@+id/num5"
                         android:layout_alignParentStart="true"
                         android:text="5"
-                        android:onClick="@{() -> viewModel.numberClick(5)}"
+                        app:onClick="@{() -> viewModel.numberClick(5)}"
                         android:layout_marginTop="30dp"
                         android:layout_marginStart="@dimen/margin_start"
                         android:layout_width="@dimen/width"
@@ -86,7 +87,7 @@
                         android:id="@+id/num6"
                         android:layout_alignParentEnd="true"
                         android:text="8"
-                        android:onClick="@{() -> viewModel.numberClick(8)}"
+                        app:onClick="@{() -> viewModel.numberClick(8)}"
                         android:layout_marginTop="30dp"
                         android:layout_marginEnd="@dimen/margin_end"
                         android:layout_width="@dimen/width"
@@ -102,7 +103,7 @@
                     android:layout_marginEnd="@dimen/margin_end"
                     android:layout_gravity="center"
                     android:text="@string/option"
-                    android:onClick="@{() -> viewModel.optionClick()}"
+                    app:onClick="@{() -> viewModel.optionClick()}"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     style="@style/Button_Board"/>
