@@ -1,113 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable name="viewModel" type="giavu.co.jp.spintplaning.activity.MainViewModel"/>
     </data>
-    <ScrollView
+
+    <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@color/jtx_blue"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-        <LinearLayout
-                xmlns:tools="http://schemas.android.com/tools"
-                android:background="@color/jtx_blue"
+            android:orientation="vertical"
+            tools:context=".activity.MainActivity">
+        <RelativeLayout
+                android:id="@+id/group1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:context=".activity.MainActivity">
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <Button
-                        android:id="@+id/num1"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginTop="30dp"
-                        android:text="1/2"
-                        android:onClick="@{() -> viewModel.floatClick()}"
-                        android:layout_marginStart="@dimen/margin_start"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-                <Button
-                        android:id="@+id/num2"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginTop="30dp"
-                        android:text="1"
-                        android:layout_marginEnd="@dimen/margin_end"
-                        android:onClick="@{() -> viewModel.numberClick(1)}"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <Button
-                        android:id="@+id/num3"
-                        android:layout_alignParentStart="true"
-                        android:text="2"
-                        android:onClick="@{() -> viewModel.numberClick(2)}"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="@dimen/margin_start"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-                <Button
-                        android:id="@+id/num4"
-                        android:layout_alignParentEnd="true"
-                        android:text="3"
-                        android:onClick="@{() -> viewModel.numberClick(3)}"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginEnd="@dimen/margin_end"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <Button
-                        android:id="@+id/num5"
-                        android:layout_alignParentStart="true"
-                        android:text="5"
-                        android:onClick="@{() -> viewModel.numberClick(5)}"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginStart="@dimen/margin_start"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-                <Button
-                        android:id="@+id/num6"
-                        android:layout_alignParentEnd="true"
-                        android:text="8"
-                        android:onClick="@{() -> viewModel.numberClick(8)}"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginEnd="@dimen/margin_end"
-                        android:layout_width="@dimen/width"
-                        android:layout_height="@dimen/height"
-                        style="@style/Button_Board"/>
-
-            </RelativeLayout>
-
+                android:layout_height="wrap_content">
             <Button
-                    android:id="@+id/option"
-                    android:layout_marginTop="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="1/2"
+                    android:onClick="@{() -> viewModel.floatClick()}"
                     android:layout_marginStart="@dimen/margin_start"
-                    android:layout_marginEnd="@dimen/margin_end"
-                    android:layout_gravity="center"
-                    android:text="@string/option"
-                    android:onClick="@{() -> viewModel.optionClick()}"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
                     style="@style/Button_Board"/>
 
-        </LinearLayout>
-    </ScrollView>
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="1"
+                    android:onClick="@{() -> viewModel.selectPoint(1)}"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_alignParentEnd="true"
+                    android:text="2"
+                    android:onClick="@{() -> viewModel.selectPoint(2)}"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/group2"
+                android:layout_below="@+id/group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="3"
+                    android:onClick="@{() -> viewModel.selectPoint(3)}"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="5"
+                    android:onClick="@{() -> viewModel.selectPoint(5)}"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_alignParentEnd="true"
+                    android:text="8"
+                    android:onClick="@{() -> viewModel.selectPoint(8)}"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/group3"
+                android:layout_below="@+id/group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="10"
+                    android:onClick="@{() -> viewModel.selectPoint(10)}"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="15"
+                    android:onClick="@{() -> viewModel.selectPoint(15)}"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_alignParentEnd="true"
+                    android:text="20"
+                    android:onClick="@{() -> viewModel.selectPoint(20)}"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:layout_below="@+id/group3"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_fileName="bear.json" />
+
+        <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:layout_alignParentEnd="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+            <TextView
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="@string/information"
+                    android:textSize="20sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                    android:onClick="@{() -> viewModel.showInformation()}"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_fileName="loading.json" />
+        </RelativeLayout>
+
+    </RelativeLayout>
 </layout>

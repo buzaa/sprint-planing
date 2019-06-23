@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<notices>
+    <notice>
+        <name>LicensesDialog</name>
+        <url>http://github.psdev.de/LicensesDialog/</url>
+        <copyright>Copyright 2013 Philip Schiffer</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Android KTX</name>
+        <url>https://github.com/android/android-ktx</url>
+        <copyright>Copyright 2018 The Android Open Source Project</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>lottie-android</name>
+        <url>https://github.com/airbnb/lottie-android</url>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RxBinding</name>
+        <url>https://github.com/JakeWharton/RxBinding</url>
+        <copyright>Copyright (C) 2015 Jake Wharton</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RxJava</name>
+        <url>https://github.com/ReactiveX/RxJava</url>
+        <copyright>Copyright (c) 2016-present, RxJava Contributors.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>
