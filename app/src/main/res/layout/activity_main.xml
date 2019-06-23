@@ -102,16 +102,16 @@
             <Button
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
-                    android:text="15"
-                    android:onClick="@{() -> viewModel.selectPoint(15)}"
+                    android:text="13"
+                    android:onClick="@{() -> viewModel.selectPoint(13)}"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
                     style="@style/Button_Board"/>
 
             <Button
                     android:layout_alignParentEnd="true"
-                    android:text="20"
-                    android:onClick="@{() -> viewModel.selectPoint(20)}"
+                    android:text="15"
+                    android:onClick="@{() -> viewModel.selectPoint(15)}"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="@dimen/margin_end"
                     android:layout_width="@dimen/width"
@@ -120,15 +120,41 @@
 
         </RelativeLayout>
 
-        <com.airbnb.lottie.LottieAnimationView
+        <RelativeLayout
+                android:id="@+id/group4"
                 android:layout_below="@+id/group3"
-                android:layout_marginTop="50dp"
-                android:layout_centerHorizontal="true"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_fileName="bear.json" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="20"
+                    android:onClick="@{() -> viewModel.selectPoint(20)}"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="40"
+                    android:onClick="@{() -> viewModel.selectPoint(40)}"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_alignParentEnd="true"
+                    android:text="100"
+                    android:onClick="@{() -> viewModel.selectPoint(100)}"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+        </RelativeLayout>
 
         <RelativeLayout
                 android:layout_marginBottom="20dp"
