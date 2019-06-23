@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Planning Poker</string>
-    <string name="option">"?"</string>
+    <string name="setting">setting</string>
+    <string name="about">"?"</string>
+    <string name="information">i</string>
+    <string name="label_information">Information</string>
+    <string name="what_is_planning_poker">Planning Poker is an agile estimating and planning technique that is consensus based. To start a poker planning session, the product owner or customer reads an agile user story or describes a feature to the estimators.\n
+\n
+Each estimator is holding a deck of Planning Poker cards with values like 1/2, 1, 2, 3, 5, 8, 10, 15 and 20, which is the sequence we recommend. The values represent the number of story points, ideal days, or other units in which the team estimates.\n
+\n
+The estimators discuss the feature, asking questions of the product owner as needed. When the feature has been fully discussed, each estimator privately selects one card to represent his or her estimate. All cards are then revealed at the same time.
+\n
+\n
+If all estimators selected the same value, that becomes the estimate. If not, the estimators discuss their estimates. The high and low estimators should especially share their reasons. After further discussion, each estimator reselects an estimate card, and all cards are again revealed at the same time.
+    </string>
 </resources>

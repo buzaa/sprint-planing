@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
         <variable name="viewModel" type="giavu.co.jp.spintplaning.show_card.ShowNumberViewModel"/>
     </data>
@@ -15,7 +14,7 @@
                 android:background="@drawable/button_number_background_status"
                 android:visibility="@{safeUnbox(viewModel.readyVisibility)}"
                 android:text="READY!"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/jtx_blue"
                 android:textSize="50sp"
                 android:layout_centerInParent="true"
                 android:onClick="@{() -> viewModel.readyClick()}"
