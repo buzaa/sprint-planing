@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import giavu.co.jp.spintplaning.R
 import giavu.co.jp.spintplaning.databinding.ActivityMainBinding
+import giavu.co.jp.spintplaning.information.InformationActivity
 import giavu.co.jp.spintplaning.show_card.ShowNumberActivity
 
 class MainActivity : AppCompatActivity() {
@@ -36,8 +37,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun observeViewModel() {
         with(viewModel) {
-            numberValue.observe(this@MainActivity, Observer {
+            pointSelectEvent.observe(this@MainActivity, Observer {
                 startActivity(ShowNumberActivity.createIntent(this@MainActivity, it))
+            })
+            informationEvent.observe(this@MainActivity, Observer {
+                startActivity(InformationActivity.createIntent(this@MainActivity))
             })
         }
     }

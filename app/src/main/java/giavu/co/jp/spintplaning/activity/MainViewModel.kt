@@ -10,23 +10,24 @@ import androidx.lifecycle.ViewModel
  */
 class MainViewModel : ViewModel() {
 
-    companion object {
-        const val TAG = "MainViewModel"
-    }
+    private val _pointSelectEvent: MutableLiveData<String> = MutableLiveData()
+    private val _informationEvent: MutableLiveData<Unit> = MutableLiveData()
 
-    private val _numberValue: MutableLiveData<String> = MutableLiveData()
-    val numberValue: LiveData<String>
-        get() = _numberValue
+    val pointSelectEvent: LiveData<String>
+        get() = _pointSelectEvent
 
-    fun numberClick(number: Int) {
-        _numberValue.value = number.toString()
+    val informationEvent: LiveData<Unit>
+        get() = _informationEvent
+
+    fun selectPoint(number: Int) {
+        _pointSelectEvent.value = number.toString()
     }
 
     fun floatClick() {
-        _numberValue.value = "1/2"
+        _pointSelectEvent.value = "1/2"
     }
 
-    fun optionClick() {
-
+    fun showInformation() {
+        _informationEvent.value = Unit
     }
 }
