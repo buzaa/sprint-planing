@@ -9,6 +9,7 @@
     <color name="white">#FFFFFF</color>
     <color name="grey">#DAD6D6</color>
     <!-- accent colors -->
+    <color name="red">#920336</color>
     <color name="jtx_pink">#D20B52</color>
     <color name="jtx_pink_light">#DB3B74</color>
     <color name="jtx_pink_dark">#A80841</color>
