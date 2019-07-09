@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="viewModel" type="giavu.co.jp.spintplaning.information.AboutViewModel"/>
+    </data>
+    <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".information.AboutActivity">
+
+        <TextView
+                android:id="@+id/about"
+                style="@style/AboutItem"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{() -> viewModel.onClickAbout()}"
+                android:text="What is planning poker"/>
+
+        <include layout="@layout/layout_separator_input"/>
+
+        <TextView
+                android:id="@+id/privacy"
+                style="@style/AboutItem"
+                android:onClick="@{() -> viewModel.onClickPrivacy()}"
+                android:text="Privacy"/>
+
+        <include layout="@layout/layout_separator_input"/>
+
+
+    </LinearLayout>
+</layout>
