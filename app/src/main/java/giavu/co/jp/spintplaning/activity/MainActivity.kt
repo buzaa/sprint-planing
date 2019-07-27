@@ -40,8 +40,13 @@ class MainActivity : AppCompatActivity() {
             pointSelectEvent.observe(this@MainActivity, Observer {
                 startActivity(ShowNumberActivity.createIntent(this@MainActivity, it))
             })
+
             informationEvent.observe(this@MainActivity, Observer {
                 startActivity(AboutActivity.createIntent(this@MainActivity))
+            })
+
+            selectSmallEvent.observe(this@MainActivity, Observer {
+                // TODO show layout
             })
         }
     }
