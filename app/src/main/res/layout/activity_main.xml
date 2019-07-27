@@ -157,6 +157,42 @@
         </RelativeLayout>
 
         <RelativeLayout
+                android:id="@+id/group5"
+                android:layout_below="@+id/group4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="30dp"
+                    android:text="S"
+                    android:onClick="@{() -> viewModel.selectSmall()}"
+                    android:layout_marginStart="@dimen/margin_start"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="M"
+                    android:onClick="@{() -> viewModel.selectMedium()}"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+            <Button
+                    android:layout_alignParentEnd="true"
+                    android:text="L"
+                    android:onClick="@{() -> viewModel.selectLarge()}"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="@dimen/margin_end"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/height"
+                    style="@style/Button_Board"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
                 android:layout_marginBottom="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="@dimen/margin_end"
