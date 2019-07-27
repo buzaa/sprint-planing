@@ -27,7 +27,7 @@ class ShowNumberActivity : AppCompatActivity() {
         intent.getStringExtra(KEY_NUMBER) as String
     }
 
-    val viewModel by lazy {
+    private val viewModel by lazy {
         ViewModelProviders.of(this).get(ShowNumberViewModel::class.java)
     }
 

@@ -5,11 +5,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".information.InformationActivity">
+        tools:context=".information.PrivacyActivity">
+
     <TextView
-            android:text="@string/what_is_planning_poker"
-            android:padding="10dp"
+            android:text="Software License"
+            style="@style/TextViewHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+    <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
 </LinearLayout>
