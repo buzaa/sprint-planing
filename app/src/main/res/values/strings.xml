@@ -23,4 +23,7 @@
         estimates. The high and low estimators should especially share their reasons. After further discussion, each
         estimator reselects an estimate card, and all cards are again revealed at the same time.
     </string>
+    <string name="introduce_splash">Planning Poker is an agile estimating and planning technique that is consensus
+        based. To start a poker planning session, the product owner or customer reads an agile user story or describes a
+        feature to the estimators.</string>
 </resources>
