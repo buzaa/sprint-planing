@@ -45,4 +45,7 @@ dependencies {
     implementation "com.airbnb.android:lottie:2.8.0"
     implementation "de.psdev.licensesdialog:licensesdialog:1.9.0"
 
+    implementation project(":domain")
+    implementation project(":library")
+
 }
