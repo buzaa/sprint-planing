@@ -1,4 +1,4 @@
-package giavu.co.jp.spintplaning.extension
+package giavu.co.jp.library
 
 /**
  * @Author: Hoang Vu
