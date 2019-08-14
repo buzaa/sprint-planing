@@ -1,8 +1,9 @@
 package giavu.co.jp.domain.usecase
 
 import giavu.co.jp.model.AppData
+import giavu.co.jp.model.AppInfo
 import giavu.co.jp.repository.DataStoreApi
-import io.reactivex.Observable
+import io.reactivex.Single
 
 /**
  * @Author: Hoang Vu
@@ -10,13 +11,20 @@ import io.reactivex.Observable
  */
 class DataStoreUseCase(val dataStoreApi: DataStoreApi) {
 
-    fun fetch(): Observable<AppData> {
-        return dataStoreApi.fetch().toObservable()
-            .flatMapIterable {
-                it.map { info ->
-                    AppData(info.appVersionCode, info.appVersionName)
+    fun fetch(): Single<List<AppData>> {
+        return dataStoreApi.fetch()
+            .map {
+                it.map {
+                    mapper(it)
                 }
             }
+    }
+
+    private fun mapper(appInfo: AppInfo): AppData {
+        return AppData(
+            appRelease = appInfo.appVersionCode,
+            appSummary = appInfo.appVersionCode + appInfo.appVersionName
+        )
     }
 
 }
