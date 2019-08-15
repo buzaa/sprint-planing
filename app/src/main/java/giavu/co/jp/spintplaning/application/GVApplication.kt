@@ -8,7 +8,7 @@ import giavu.co.jp.spintplaning.di.KoinInitializer
  * @Date:   2019-08-14
  */
 
-open class GVApplication : Application {
+open class GVApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         KoinInitializer(this).initialize()
