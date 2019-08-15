@@ -9,14 +9,12 @@ import io.reactivex.Single
  * @Author: Hoang Vu
  * @Date:   2019-08-12
  */
-class DataStoreUseCase(val dataStoreApi: DataStoreApi) {
+class FetchDataStoreUseCase(val dataStoreApi: DataStoreApi) {
 
-    fun fetch(): Single<List<AppData>> {
-        return dataStoreApi.fetch()
-            .map {
-                it.map {
-                    mapper(it)
-                }
+    operator fun invoke(): Single<List<AppData>> {
+        return dataStoreApi.get()
+            .map { appInfos ->
+                appInfos.map { mapper(it) }
             }
     }
 

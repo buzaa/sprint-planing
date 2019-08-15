@@ -1,6 +1,6 @@
 package giavu.co.jp.spintplaning.di
 
-import giavu.co.jp.domain.usecase.DataStoreUseCase
+import giavu.co.jp.domain.usecase.FetchDataStoreUseCase
 import org.koin.dsl.module.Module
 import org.koin.dsl.module.module
 
@@ -9,7 +9,7 @@ import org.koin.dsl.module.module
  * @Date:   2019-08-14
  */
 class UseCaseModule {
-    val module: Module = org.koin.dsl.module.module {
-        single { DataStoreUseCase(dataStoreApi = get()) }
+    val module: Module = module {
+        single { FetchDataStoreUseCase(dataStoreApi = get()) }
     }
 }

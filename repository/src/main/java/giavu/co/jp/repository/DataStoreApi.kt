@@ -8,11 +8,11 @@ import io.reactivex.Single
  * @Date:   2019-08-12
  */
 interface DataStoreApi {
-    fun fetch(): Single<List<AppInfo>>
+    fun get(): Single<List<AppInfo>>
 }
 
 class DataStoreApiImpl : DataStoreApi {
-    override fun fetch(): Single<List<AppInfo>> {
+    override fun get(): Single<List<AppInfo>> {
         return Single.fromCallable {
             mutableListOf<AppInfo>().apply {
                 add(0, AppInfo(appVersionCode = "1", appVersionName = "11"))
