@@ -29,7 +29,7 @@ class InformationActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = getString(R.string.label_information)
             setDisplayHomeAsUpEnabled(true)
-            setHomeAsUpIndicator(R.drawable.ic_clear)
+            setHomeAsUpIndicator(R.drawable.ic_back)
         }
     }
 
