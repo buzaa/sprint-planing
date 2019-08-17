@@ -19,17 +19,18 @@
                 android:layout_centerInParent="true"
                 android:onClick="@{() -> viewModel.readyClick()}"
                 android:layout_width="300dp"
-                android:layout_height="400dp"/>
+                android:layout_height="300dp"/>
         <Button
                 android:id="@+id/show"
                 android:visibility="@{safeUnbox(viewModel.pointVisibility)}"
                 android:background="@drawable/button_number_background_status"
                 android:textSize="150sp"
+                android:textColor="@color/jtx_blue"
                 android:text="@{viewModel.point}"
                 android:onClick="@{() -> viewModel.pointClick()}"
                 android:layout_centerInParent="true"
                 android:layout_width="300dp"
-                android:layout_height="400dp"/>
+                android:layout_height="300dp"/>
 
     </RelativeLayout>
 </layout>

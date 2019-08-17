@@ -1,5 +1,7 @@
-package giavu.co.jp.spintplaning.activity
+package giavu.co.jp.spintplaning.main
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -11,6 +13,12 @@ import giavu.co.jp.spintplaning.information.AboutActivity
 import giavu.co.jp.spintplaning.show_card.ShowNumberActivity
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun createIntent(context: Context): Intent {
+            return Intent(context, MainActivity::class.java)
+        }
+    }
 
     val viewModel by lazy {
         ViewModelProviders.of(this).get(MainViewModel::class.java)
@@ -40,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             pointSelectEvent.observe(this@MainActivity, Observer {
                 startActivity(ShowNumberActivity.createIntent(this@MainActivity, it))
             })
+
             informationEvent.observe(this@MainActivity, Observer {
                 startActivity(AboutActivity.createIntent(this@MainActivity))
             })

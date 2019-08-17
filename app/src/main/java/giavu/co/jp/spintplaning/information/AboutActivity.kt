@@ -10,6 +10,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import giavu.co.jp.spintplaning.R
 import giavu.co.jp.spintplaning.databinding.ActivityAboutBinding
+import giavu.co.jp.spintplaning.helper.AppInfoUtils
+import kotlinx.android.synthetic.main.activity_about.*
 
 class AboutActivity : AppCompatActivity() {
 
@@ -32,6 +34,7 @@ class AboutActivity : AppCompatActivity() {
     private fun initialize() {
         initializeActionBar()
         initDatabinding()
+        initView()
     }
 
     private fun initDatabinding() {
@@ -51,14 +54,22 @@ class AboutActivity : AppCompatActivity() {
         }
     }
 
+    private fun initView() {
+        app_version.text = getString(R.string.app_show_info, AppInfoUtils.getAppInfo())
+    }
+
     private fun observeViewModel() {
         with(viewModel) {
             onClickAboutEvent.observe(this@AboutActivity, Observer {
-                startActivity(InformationActivity.createIntent(this@AboutActivity))
+                startActivity(InformationActivity.createIntentForUsage(this@AboutActivity))
             })
 
             onClickPrivacyEvent.observe(this@AboutActivity, Observer {
                 startActivity(PrivacyActivity.createIntent(this@AboutActivity))
+            })
+
+            onClickDeveloperEvent.observe(this@AboutActivity, Observer {
+                startActivity(InformationActivity.createIntentForGreetings(this@AboutActivity))
             })
         }
     }

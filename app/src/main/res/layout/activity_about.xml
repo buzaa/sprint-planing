@@ -17,7 +17,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="@{() -> viewModel.onClickAbout()}"
-                android:text="What is planning poker"/>
+                android:text="What is planning poker?"/>
 
         <include layout="@layout/layout_separator_input"/>
 
@@ -29,6 +29,30 @@
 
         <include layout="@layout/layout_separator_input"/>
 
+        <TextView
+                android:id="@+id/developer"
+                style="@style/AboutItem"
+                android:onClick="@{() -> viewModel.onClickDeveloper()}"
+                android:text="Greetings from developer"/>
 
+        <include layout="@layout/layout_separator_input"/>
+
+        <TextView
+                android:id="@+id/app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_30"
+                android:paddingLeft="@dimen/margin_30"
+                android:paddingRight="@dimen/margin_30"
+                android:text="@string/app_show_info"
+                android:gravity="bottom"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingLeft="@dimen/margin_30"
+                android:paddingRight="@dimen/margin_30"
+                android:text="@string/app_version"
+                android:gravity="bottom"/>
     </LinearLayout>
 </layout>
