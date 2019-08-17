@@ -1,4 +1,4 @@
-package giavu.co.jp.spintplaning.activity
+package giavu.co.jp.spintplaning.main
 
 import android.os.Bundle
 import android.view.animation.AnimationUtils

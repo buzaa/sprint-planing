@@ -2,14 +2,14 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="viewModel" type="giavu.co.jp.spintplaning.activity.SplashViewModel"/>
+        <variable name="viewModel" type="giavu.co.jp.spintplaning.main.SplashViewModel"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             xmlns:tools="http://schemas.android.com/tools"
             android:background="@color/jtx_blue"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".activity.SplashActivity">
+            tools:context=".main.SplashActivity">
 
         <TextView
                 android:id="@+id/introduce_text"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        <variable name="viewModel" type="giavu.co.jp.spintplaning.activity.MainViewModel"/>
+        <variable name="viewModel" type="giavu.co.jp.spintplaning.main.MainViewModel"/>
     </data>
 
     <RelativeLayout
@@ -10,7 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:context=".activity.MainActivity">
+            tools:context=".main.MainActivity">
         <RelativeLayout
                 android:id="@+id/group1"
                 android:layout_alignParentTop="true"
