@@ -61,11 +61,15 @@ class AboutActivity : AppCompatActivity() {
     private fun observeViewModel() {
         with(viewModel) {
             onClickAboutEvent.observe(this@AboutActivity, Observer {
-                startActivity(InformationActivity.createIntent(this@AboutActivity))
+                startActivity(InformationActivity.createIntentForUsage(this@AboutActivity))
             })
 
             onClickPrivacyEvent.observe(this@AboutActivity, Observer {
                 startActivity(PrivacyActivity.createIntent(this@AboutActivity))
+            })
+
+            onClickDeveloperEvent.observe(this@AboutActivity, Observer {
+                startActivity(InformationActivity.createIntentForGreetings(this@AboutActivity))
             })
         }
     }

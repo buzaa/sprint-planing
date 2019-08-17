@@ -28,4 +28,15 @@
         feature to the estimators.</string>
     <string name="app_version">"@ 2019 H2 Co., Ltd."</string>
     <string name="app_show_info">Planning Poker %1$s</string>
+    <string name="greetings_from_dev">Say hello,\n
+        \n
+        I’ve been waiting to hear from you.\n
+        \n
+        Have a question about Planning Poker or whatever you want an app looks like? I’m looking forward to hearing from you!
+        \n
+        Let us know what’s on your mind and we’ll get back to you soon.\n
+        \n
+        Dop me a line at ↓↓↓
+    </string>
+    <string name="greetings">Greetings</string>
 </resources>
