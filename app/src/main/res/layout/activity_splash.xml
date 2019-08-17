@@ -30,6 +30,7 @@
                 android:id="@+id/start_button"
                 android:onClick="@{() -> viewModel.startGame()}"
                 android:text="Let's start"
+                android:textStyle="bold"
                 android:layout_marginStart="@dimen/margin_30"
                 android:layout_marginEnd="@dimen/margin_30"
                 app:layout_constraintStart_toStartOf="parent"
