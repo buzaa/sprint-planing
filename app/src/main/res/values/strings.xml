@@ -26,4 +26,5 @@
     <string name="introduce_splash">Planning Poker is an agile estimating and planning technique that is consensus
         based. To start a poker planning session, the product owner or customer reads an agile user story or describes a
         feature to the estimators.</string>
+    <string name="app_version">"@ 2019 H2 Co., Ltd."</string>
 </resources>
