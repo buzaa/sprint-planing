@@ -27,4 +27,5 @@
         based. To start a poker planning session, the product owner or customer reads an agile user story or describes a
         feature to the estimators.</string>
     <string name="app_version">"@ 2019 H2 Co., Ltd."</string>
+    <string name="app_show_info">Planning Poker %1$s</string>
 </resources>
