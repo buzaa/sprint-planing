@@ -52,10 +52,6 @@ class MainActivity : AppCompatActivity() {
             informationEvent.observe(this@MainActivity, Observer {
                 startActivity(AboutActivity.createIntent(this@MainActivity))
             })
-
-            selectSmallEvent.observe(this@MainActivity, Observer {
-                // TODO show layout
-            })
         }
     }
 }
