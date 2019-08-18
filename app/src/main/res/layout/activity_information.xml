@@ -12,15 +12,5 @@
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    <TextView
-            android:id="@+id/contact"
-            android:padding="10dp"
-            android:gravity="center"
-            android:autoLink="all"
-            android:clickable="true"
-            android:focusable="true"
-            android:text="hoangvmh@gmail.com"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
 
 </LinearLayout>

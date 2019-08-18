@@ -58,14 +58,12 @@ class InformationActivity : AppCompatActivity() {
         when (router) {
             Router.USAGE -> {
                 content_text.text = getString(R.string.what_is_planning_poker)
-                contact.isVisible = false
             }
             Router.GREETINGS -> {
                 content_text.apply {
                     text = getString(R.string.greetings_from_dev)
                     textSize = 20F
                 }
-                contact.isVisible = true
             }
             null -> finish()
         }
