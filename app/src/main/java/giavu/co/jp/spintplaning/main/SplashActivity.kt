@@ -64,6 +64,7 @@ class SplashActivity : AppCompatActivity() {
         with(viewModel) {
             buttonStartEvent.observe(this@SplashActivity, Observer {
                 startActivity(MainActivity.createIntent(this@SplashActivity))
+                finish()
             })
         }
     }
