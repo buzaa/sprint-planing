@@ -10,21 +10,28 @@ import androidx.lifecycle.ViewModel
  */
 class AboutViewModel : ViewModel() {
 
-    private val _onClickAbout: MutableLiveData<Unit> = MutableLiveData()
-    private val _onClickPrivacy: MutableLiveData<Unit> = MutableLiveData()
+    private val _onClickAboutEvent: MutableLiveData<Unit> = MutableLiveData()
+    private val _onClickPrivacyEvent: MutableLiveData<Unit> = MutableLiveData()
+    private val _onClickDeveloperEvent: MutableLiveData<Unit> = MutableLiveData()
 
     val onClickAboutEvent: LiveData<Unit>
-        get() = _onClickAbout
+        get() = _onClickAboutEvent
 
     val onClickPrivacyEvent: LiveData<Unit>
-        get() = _onClickPrivacy
+        get() = _onClickPrivacyEvent
 
+    val onClickDeveloperEvent: LiveData<Unit>
+        get() = _onClickDeveloperEvent
 
     fun onClickAbout() {
-        _onClickAbout.value = Unit
+        _onClickAboutEvent.value = Unit
     }
 
     fun onClickPrivacy() {
-        _onClickPrivacy.value = Unit
+        _onClickPrivacyEvent.value = Unit
+    }
+
+    fun onClickDeveloper() {
+        _onClickDeveloperEvent.value = Unit
     }
 }

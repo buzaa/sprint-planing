@@ -35,7 +35,7 @@ class PrivacyActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = getString(R.string.label_privacy)
             setDisplayHomeAsUpEnabled(true)
-            setHomeAsUpIndicator(R.drawable.ic_clear)
+            setHomeAsUpIndicator(R.drawable.ic_back)
         }
     }
 

@@ -10,5 +10,10 @@
     <dimen name="size_40">40sp</dimen>
     <dimen name="size_50">50sp</dimen>
 
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
 
 </resources>
