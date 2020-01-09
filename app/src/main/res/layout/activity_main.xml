@@ -20,8 +20,8 @@
             <Button
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="30dp"
-                    android:text="1/2"
-                    android:onClick="@{() -> viewModel.floatClick()}"
+                    android:text="0"
+                    android:onClick="@{() -> viewModel.selectPoint(0)}"
                     android:layout_marginStart="@dimen/margin_start"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
@@ -66,16 +66,16 @@
             <Button
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
-                    android:text="4"
-                    android:onClick="@{() -> viewModel.selectPoint(4)}"
+                    android:text="5"
+                    android:onClick="@{() -> viewModel.selectPoint(5)}"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
                     style="@style/Button_Board"/>
 
             <Button
                     android:layout_alignParentEnd="true"
-                    android:text="5"
-                    android:onClick="@{() -> viewModel.selectPoint(5)}"
+                    android:text="8"
+                    android:onClick="@{() -> viewModel.selectPoint(8)}"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="@dimen/margin_end"
                     android:layout_width="@dimen/width"
@@ -92,8 +92,8 @@
             <Button
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="30dp"
-                    android:text="8"
-                    android:onClick="@{() -> viewModel.selectPoint(8)}"
+                    android:text="13"
+                    android:onClick="@{() -> viewModel.selectPoint(13)}"
                     android:layout_marginStart="@dimen/margin_start"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
@@ -102,16 +102,16 @@
             <Button
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
-                    android:text="10"
-                    android:onClick="@{() -> viewModel.selectPoint(10)}"
+                    android:text="21"
+                    android:onClick="@{() -> viewModel.selectPoint(21)}"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
                     style="@style/Button_Board"/>
 
             <Button
                     android:layout_alignParentEnd="true"
-                    android:text="13"
-                    android:onClick="@{() -> viewModel.selectPoint(13)}"
+                    android:text="34"
+                    android:onClick="@{() -> viewModel.selectPoint(34)}"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="@dimen/margin_end"
                     android:layout_width="@dimen/width"
@@ -128,8 +128,8 @@
             <Button
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="30dp"
-                    android:text="15"
-                    android:onClick="@{() -> viewModel.selectPoint(15)}"
+                    android:text="55"
+                    android:onClick="@{() -> viewModel.selectPoint(55)}"
                     android:layout_marginStart="@dimen/margin_start"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
@@ -138,16 +138,16 @@
             <Button
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="30dp"
-                    android:text="20"
-                    android:onClick="@{() -> viewModel.selectPoint(20)}"
+                    android:text="89"
+                    android:onClick="@{() -> viewModel.selectPoint(89)}"
                     android:layout_width="@dimen/width"
                     android:layout_height="@dimen/height"
                     style="@style/Button_Board"/>
 
             <Button
                     android:layout_alignParentEnd="true"
-                    android:text="40"
-                    android:onClick="@{() -> viewModel.selectPoint(40)}"
+                    android:text="100"
+                    android:onClick="@{() -> viewModel.selectPoint(100)}"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="@dimen/margin_end"
                     android:layout_width="@dimen/width"
